@@ -74,9 +74,9 @@ Le notebook produit un tableau comparatif final (sans apprentissage vs MLP) sur 
 
 | Modèle (test) | Accuracy | Précision (macro) | Rappel (macro) | F1 (macro) |
 |---|---|---|---|---|
-| Sans apprentissage (IDF) | _à compléter_ | _à compléter_ | _à compléter_ | _à compléter_ |
-| MLP (PyTorch) | _à compléter_ | _à compléter_ | _à compléter_ | _à compléter_ |
-| RoBERTa fine-tuné (validation) | _à compléter_ | — | — | _à compléter_ |
+| Sans apprentissage (IDF) | 0.4739 | 0.4065 | 0.4314 | 0.3961 |
+| MLP (PyTorch) | 0.6526 | 0.6352 | 0.5082 | 0.5460 |
+| RoBERTa fine-tuné (validation) | 0.776966 | — | — | 0.671193 |
 
 > Remarque : RoBERTa est évalué sur sa propre validation (split 90/10 du train), pas sur le même jeu de test que les deux premières approches. La comparaison directe est donc à interpréter avec prudence.
 
@@ -112,4 +112,4 @@ jupyter notebook projetNLP.ipynb
 
 ## Remarques
 
-Certaines parties du code (découpage, métriques, boucle d'entraînement, choix de l'architecture du MLP) ont été réalisées avec l'aide de ChatGPT, comme indiqué dans les commentaires du notebook.
+Certaines parties du code (découpage, métriques, boucle d'entraînement, choix de l'architecture du MLP) ont été réalisées avec l'aide de ChatGPT ou de Claudev, comme indiqué dans les commentaires du notebook.
